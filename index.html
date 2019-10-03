@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Latihan3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="jquery-3.4.1.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <p>Jquery Demo</p>
+        <br>
+        <p>
+            Nama: <input type="text" id="nama">
+        </p>
+        <p>
+            Copy Nama: <input type="text" id="nama2">
+        </p>
+        <p>
+            <button class="btn btn-primary" id="btn">Hello</button>
+        </p>
+        <p>
+            <button class="btn btn-primary" id="btn2">Hi</button>
+        </p>
+        <p>
+            Hasil: <span id="Hasil"></span>
+        </p>
+    </div>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            $.get("mydata.json", function (data) {
+                console.log(data);
+            });
+            $.get("employee.json", function (data) {
+                console.log(data);
+            });
+        });
+
+        $("#btn2").click(function () {
+            var jsondata = {
+                id: 20,
+                nama: "mr.abc"
+            };
+            $.post("http://pi.makers.id/echo.php",
+                JSON.stringify(jsondata), function (data) {
+                    console.log(data);
+                });
+        });
+
+    });
+</script>
+
+</html>

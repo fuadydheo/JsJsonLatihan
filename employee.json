@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "nama" : "employee",
+        "email" : "employee@gmail.cpm"
+    },
+    {
+        "id" : 2,
+        "nama" : "employee2",
+        "email" : "employee2@gmail.cpm"
+    },
+    {
+        "id" : 3,
+        "nama" : "employee3",
+        "email" : "employee3@gmail.cpm"
+    },
+    {
+        "id" : 4,
+        "nama" : "employee4",
+        "email" : "employee4@gmail.cpm"
+    }
+]

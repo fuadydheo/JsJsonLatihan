@@ -1,0 +1,15 @@
+{
+    "id": 12,
+    "nama": "mr.abc",
+    "email": "abc@mail.com",
+    "keluarga":[
+        {
+            "hubungan": "anak",
+            "nama": "sianak"
+        },
+        {
+            "hubungan": "isteri",
+            "nama":"si isteri"
+        }
+    ]
+}
